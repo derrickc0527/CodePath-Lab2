@@ -1,0 +1,6 @@
+framework module Pods_My_Tumbly {
+  umbrella header "Pods-My_Tumbly-umbrella.h"
+
+  export *
+  module * { export * }
+}

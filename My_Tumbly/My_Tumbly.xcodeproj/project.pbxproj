@@ -1,0 +1,389 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4988F9ED1E458C05004B117B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4988F9EC1E458C05004B117B /* AppDelegate.swift */; };
+		4988F9F21E458C05004B117B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4988F9F01E458C05004B117B /* Main.storyboard */; };
+		4988F9F41E458C05004B117B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4988F9F31E458C05004B117B /* Assets.xcassets */; };
+		4988F9F71E458C05004B117B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4988F9F51E458C05004B117B /* LaunchScreen.storyboard */; };
+		4988F9FF1E459313004B117B /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4988F9FE1E459313004B117B /* PhotosViewController.swift */; };
+		4988FA011E459351004B117B /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4988FA001E459351004B117B /* PhotoCell.swift */; };
+		5395A9365F1D1164F939947A /* Pods_My_Tumbly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F71153F0A4093437065F5538 /* Pods_My_Tumbly.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4988F9E91E458C05004B117B /* My_Tumbly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = My_Tumbly.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4988F9EC1E458C05004B117B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4988F9F11E458C05004B117B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4988F9F31E458C05004B117B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4988F9F61E458C05004B117B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4988F9F81E458C05004B117B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4988F9FE1E459313004B117B /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		4988FA001E459351004B117B /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		AA2647D634B14A90E8953BE6 /* Pods-My_Tumbly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My_Tumbly.release.xcconfig"; path = "Pods/Target Support Files/Pods-My_Tumbly/Pods-My_Tumbly.release.xcconfig"; sourceTree = "<group>"; };
+		EE7CA794FC66B79176AA6EA4 /* Pods-My_Tumbly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My_Tumbly.debug.xcconfig"; path = "Pods/Target Support Files/Pods-My_Tumbly/Pods-My_Tumbly.debug.xcconfig"; sourceTree = "<group>"; };
+		F71153F0A4093437065F5538 /* Pods_My_Tumbly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_Tumbly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4988F9E61E458C05004B117B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5395A9365F1D1164F939947A /* Pods_My_Tumbly.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A972F64CF84D9DBEA3F1A6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F71153F0A4093437065F5538 /* Pods_My_Tumbly.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4988F9E01E458C05004B117B = {
+			isa = PBXGroup;
+			children = (
+				4988F9EB1E458C05004B117B /* My_Tumbly */,
+				4988F9EA1E458C05004B117B /* Products */,
+				B6DAB0E5DFF9010D039E043F /* Pods */,
+				1A972F64CF84D9DBEA3F1A6B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4988F9EA1E458C05004B117B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4988F9E91E458C05004B117B /* My_Tumbly.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4988F9EB1E458C05004B117B /* My_Tumbly */ = {
+			isa = PBXGroup;
+			children = (
+				4988F9EC1E458C05004B117B /* AppDelegate.swift */,
+				4988F9F01E458C05004B117B /* Main.storyboard */,
+				4988F9F31E458C05004B117B /* Assets.xcassets */,
+				4988F9F51E458C05004B117B /* LaunchScreen.storyboard */,
+				4988F9F81E458C05004B117B /* Info.plist */,
+				4988F9FE1E459313004B117B /* PhotosViewController.swift */,
+				4988FA001E459351004B117B /* PhotoCell.swift */,
+			);
+			path = My_Tumbly;
+			sourceTree = "<group>";
+		};
+		B6DAB0E5DFF9010D039E043F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE7CA794FC66B79176AA6EA4 /* Pods-My_Tumbly.debug.xcconfig */,
+				AA2647D634B14A90E8953BE6 /* Pods-My_Tumbly.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4988F9E81E458C05004B117B /* My_Tumbly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4988F9FB1E458C05004B117B /* Build configuration list for PBXNativeTarget "My_Tumbly" */;
+			buildPhases = (
+				56F7E7AB1DC2DD1BBFCFD8D5 /* [CP] Check Pods Manifest.lock */,
+				4988F9E51E458C05004B117B /* Sources */,
+				4988F9E61E458C05004B117B /* Frameworks */,
+				4988F9E71E458C05004B117B /* Resources */,
+				8BD0E407E50943B50199429E /* [CP] Embed Pods Frameworks */,
+				9929074A195E81656000BBC1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = My_Tumbly;
+			productName = My_Tumbly;
+			productReference = 4988F9E91E458C05004B117B /* My_Tumbly.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4988F9E11E458C05004B117B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = DerrickCorp;
+				TargetAttributes = {
+					4988F9E81E458C05004B117B = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = RRX89U7G27;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4988F9E41E458C05004B117B /* Build configuration list for PBXProject "My_Tumbly" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4988F9E01E458C05004B117B;
+			productRefGroup = 4988F9EA1E458C05004B117B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4988F9E81E458C05004B117B /* My_Tumbly */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4988F9E71E458C05004B117B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4988F9F71E458C05004B117B /* LaunchScreen.storyboard in Resources */,
+				4988F9F41E458C05004B117B /* Assets.xcassets in Resources */,
+				4988F9F21E458C05004B117B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		56F7E7AB1DC2DD1BBFCFD8D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8BD0E407E50943B50199429E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-My_Tumbly/Pods-My_Tumbly-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9929074A195E81656000BBC1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-My_Tumbly/Pods-My_Tumbly-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4988F9E51E458C05004B117B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4988F9ED1E458C05004B117B /* AppDelegate.swift in Sources */,
+				4988FA011E459351004B117B /* PhotoCell.swift in Sources */,
+				4988F9FF1E459313004B117B /* PhotosViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4988F9F01E458C05004B117B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4988F9F11E458C05004B117B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4988F9F51E458C05004B117B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4988F9F61E458C05004B117B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4988F9F91E458C05004B117B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4988F9FA1E458C05004B117B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4988F9FC1E458C05004B117B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE7CA794FC66B79176AA6EA4 /* Pods-My_Tumbly.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RRX89U7G27;
+				INFOPLIST_FILE = My_Tumbly/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.derrickcorp.My-Tumbly";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4988F9FD1E458C05004B117B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA2647D634B14A90E8953BE6 /* Pods-My_Tumbly.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RRX89U7G27;
+				INFOPLIST_FILE = My_Tumbly/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.derrickcorp.My-Tumbly";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4988F9E41E458C05004B117B /* Build configuration list for PBXProject "My_Tumbly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4988F9F91E458C05004B117B /* Debug */,
+				4988F9FA1E458C05004B117B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4988F9FB1E458C05004B117B /* Build configuration list for PBXNativeTarget "My_Tumbly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4988F9FC1E458C05004B117B /* Debug */,
+				4988F9FD1E458C05004B117B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4988F9E11E458C05004B117B /* Project object */;
+}
