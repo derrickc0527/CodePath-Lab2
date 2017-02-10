@@ -127,15 +127,61 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
         task.resume()
 
     }
-    
     /*
+    func loadMoreData() {
+        
+        // ... Create the NSURLRequest (myRequest) ...
+        
+        // Configure session so that completion handler is executed on main UI thread
+        let url = URL(string: "https://api.tumblr.com/v2/blog/humansofnewyork.tumblr.com/posts/photo?api_key=Q6vHoaVm5L1u2ZAW1fqv3Jw48gFzYVg9P0vH0VHl3GVy6quoGV&offset=\(postsLoaded)&limit=\(limit)")
+        let request = URLRequest(url: url!)
+        let session = URLSession(
+            configuration: URLSessionConfiguration.default,
+            delegate:nil,
+            delegateQueue:OperationQueue.main
+        )
+        
+        let task : URLSessionDataTask = session.dataTask(
+            with: request as URLRequest,
+            completionHandler: { (data, response, error) in
+                if let data = data {
+                    if let responseDictionary = try! JSONSerialization.jsonObject(
+                        with: data, options:[]) as? NSDictionary {
+                        //print("responseDictionary: \(responseDictionary)")
+                        
+                        // Recall there are two fields in the response dictionary, 'meta' and 'response'.
+                        // This is how we get the 'response' field
+                        let responseFieldDictionary = responseDictionary["response"] as! NSDictionary
+                        
+                        // This is where you will store the returned array of posts in your posts property
+                        self.posts = responseFieldDictionary["posts"] as! [NSDictionary]
+                        self.isMoreDataLoading = false
+                        self.tableview.reloadData()
+                    }
+                }
+        });
+        task.resume()
+    }
+ 
+    
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if(!isMoreDataLoading){
-            isMoreDataLoading = true
+        if (!isMoreDataLoading) {
+            // Calculate the position of one screen length before the bottom of the results
+            let scrollViewContentHeight = tableview.contentSize.height
+            let scrollOffsetThreshold = scrollViewContentHeight - tableview.bounds.size.height
+            
+            // When the user has scrolled past the threshold, start requesting
+            if(scrollView.contentOffset.y > scrollOffsetThreshold && tableview.isDragging) {
+                
+                isMoreDataLoading = true
+                
+                // Code to load more results
+                loadMoreData()
+            }
         }
     }
+ 
  */
-    
     
     // MARK: - Navigation
 
