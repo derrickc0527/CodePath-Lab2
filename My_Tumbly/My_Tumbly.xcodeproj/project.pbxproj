@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4902B3F41E4D256400A28350 /* PhotoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4902B3F31E4D256400A28350 /* PhotoDetailsViewController.swift */; };
 		4988F9ED1E458C05004B117B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4988F9EC1E458C05004B117B /* AppDelegate.swift */; };
 		4988F9F21E458C05004B117B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4988F9F01E458C05004B117B /* Main.storyboard */; };
 		4988F9F41E458C05004B117B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4988F9F31E458C05004B117B /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4902B3F31E4D256400A28350 /* PhotoDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDetailsViewController.swift; sourceTree = "<group>"; };
 		4988F9E91E458C05004B117B /* My_Tumbly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = My_Tumbly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4988F9EC1E458C05004B117B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4988F9F11E458C05004B117B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 			children = (
 				4988F9EC1E458C05004B117B /* AppDelegate.swift */,
 				4988F9F01E458C05004B117B /* Main.storyboard */,
+				4902B3F31E4D256400A28350 /* PhotoDetailsViewController.swift */,
 				4988F9F31E458C05004B117B /* Assets.xcassets */,
 				4988F9F51E458C05004B117B /* LaunchScreen.storyboard */,
 				4988F9F81E458C05004B117B /* Info.plist */,
@@ -215,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4902B3F41E4D256400A28350 /* PhotoDetailsViewController.swift in Sources */,
 				4988F9ED1E458C05004B117B /* AppDelegate.swift in Sources */,
 				4988FA011E459351004B117B /* PhotoCell.swift in Sources */,
 				4988F9FF1E459313004B117B /* PhotosViewController.swift in Sources */,

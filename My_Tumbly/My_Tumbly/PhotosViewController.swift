@@ -9,11 +9,14 @@
 import UIKit
 import AFNetworking
 
-class PhotosViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class PhotosViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIScrollViewDelegate {
     
     @IBOutlet weak var tableview: UITableView!
     
     var posts: [NSDictionary] = []
+    var refreshControl: UIRefreshControl?
+    var refreshing = false;
+    var isMoreDataLoading = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +24,10 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
         tableview.delegate = self
         tableview.dataSource = self
         tableview.rowHeight = 240
+        
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(PhotosViewController.refreshControlAction(_:)), for: UIControlEvents.valueChanged)
+        tableview.insertSubview(refreshControl, at: 0)
         
         let url = URL(string:"https://api.tumblr.com/v2/blog/humansofnewyork.tumblr.com/posts/photo?api_key=Q6vHoaVm5L1u2ZAW1fqv3Jw48gFzYVg9P0vH0VHl3GVy6quoGV")
         let request = URLRequest(url: url!)
@@ -51,6 +58,10 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
         task.resume()
         
         
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableview.deselectRow(at: indexPath, animated: true)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -84,17 +95,62 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
     
+    func refreshControlAction(_ refreshControl: UIRefreshControl){
+        let url = URL(string:"https://api.tumblr.com/v2/blog/humansofnewyork.tumblr.com/posts/photo?api_key=Q6vHoaVm5L1u2ZAW1fqv3Jw48gFzYVg9P0vH0VHl3GVy6quoGV")
+        let request = URLRequest(url: url!)
+        let session = URLSession(
+            configuration: URLSessionConfiguration.default,
+            delegate:nil,
+            delegateQueue:OperationQueue.main
+        )
+        
+        let task : URLSessionDataTask = session.dataTask(
+            with: request as URLRequest,
+            completionHandler: { (data, response, error) in
+                if let data = data {
+                    if let responseDictionary = try! JSONSerialization.jsonObject(
+                        with: data, options:[]) as? NSDictionary {
+                        //print("responseDictionary: \(responseDictionary)")
+                        
+                        // Recall there are two fields in the response dictionary, 'meta' and 'response'.
+                        // This is how we get the 'response' field
+                        let responseFieldDictionary = responseDictionary["response"] as! NSDictionary
+                        
+                        // This is where you will store the returned array of posts in your posts property
+                        self.posts = responseFieldDictionary["posts"] as! [NSDictionary]
+                        self.tableview.reloadData()
+                    }
+                }
+                refreshControl.endRefreshing()
+        });
+        task.resume()
 
+    }
+    
     /*
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if(!isMoreDataLoading){
+            isMoreDataLoading = true
+        }
+    }
+ */
+    
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        let cell = sender as! UITableViewCell
+        let indexPath = tableview.indexPath(for: cell)
+        let post = posts[indexPath!.row]
+        let vc = segue.destination as! PhotoDetailsViewController
+        vc.posts = post
+        
+ 
     }
-    */
+    
+    
+    
 
 }
